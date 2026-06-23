@@ -1,0 +1,38 @@
+================================
+    Failed Login Detector v1    
+================================
+Report Generated at: 23-06-26 22:49
+
+
+-----------------------------
+        Suspicious IPs       
+-----------------------------
+
+172.16.1.1	 --> 5 Attempts
+192.168.1.10	 --> 4 Attempts
+198.51.100.22	 --> 4 Attempts
+10.0.0.5	 --> 3 Attempts
+203.0.113.45	 --> 3 Attempts
+
+
+-----------------------------
+          Normal IPs         
+-----------------------------
+
+10.10.10.10	 --> 2 Attempts
+172.20.1.15	 --> 2 Attempts
+192.168.100.100	 --> 2 Attempts
+172.31.255.254	 --> 2 Attempts
+192.168.50.5	 --> 1 Attempts
+8.8.8.8	 --> 1 Attempts
+1.1.1.1	 --> 1 Attempts
+10.50.0.25	 --> 1 Attempts
+
+
+------------------------------
+           Summary            
+------------------------------
+Suspicious IPs: 5 IPs
+Normal IPs: 8 IPs
+Unique IPs: 13 IPs
+Total Failed Attempts: 31 Attempts
