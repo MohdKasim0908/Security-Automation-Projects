@@ -1,110 +1,110 @@
-# Failed Login Detector
+# SSH Access & Failed Login Analyzer
 
-## Overview
+A Python-based security automation project focused on analyzing SSH authentication logs, detecting suspicious login activity, and generating security reports.
 
-Failed Login Detector is a Python-based security automation tool that analyzes authentication logs and identifies IP addresses responsible for failed login attempts.
-
-The tool extracts IP addresses from log files, counts failed login attempts, flags suspicious activity based on a configurable threshold, and generates a security report.
+This repository is being developed as part of a cloud security and security automation learning journey, with the goal of building practical tools commonly used in system administration, security operations, and cloud security environments.
 
 ---
 
-## Features
+## Project Goals
 
-* Parse authentication log files
-* Extract IP addresses using Regular Expressions (Regex)
-* Count failed login attempts per IP
-* Detect suspicious IP addresses
-* Generate a structured security report
-* Configurable alert threshold
-* Error handling for missing log files
+* Analyze SSH authentication logs
+* Detect failed login attempts
+* Identify suspicious IP addresses
+* Track successful and failed logins
+* Extract targeted usernames
+* Generate security reports
+* Automate log analysis workflows
 
 ---
 
 ## Technologies Used
 
 * Python 3
-* Regular Expressions (`re`)
+* Regular Expressions (Regex)
 * File Handling
 * Exception Handling
-* Collections (`Counter`)
+* JSON
+* OS Module
+
+Future versions will include:
+
+* Subprocess Module
+* Linux System Monitoring
+* Security Automation
+* AWS Integration (Boto3)
 
 ---
 
-## Project Structure
+## Current Features
+
+### Implemented
+
+* Failed login detection
+* IP address extraction
+* Failed attempt counting
+* Suspicious IP identification
+* Report generation
+* Alert threshold configuration
+
+### Planned
+
+* SSH login success analysis
+* Username extraction
+* Multi-log file support
+* Automated log discovery
+* Enhanced reporting
+* JSON report generation
+* Risk classification
+* AWS security automation integrations
+
+---
+
+## Repository Structure
 
 ```text
-failed_login_detector/
+SSH-Access-Failed-Login-Analyzer/
 │
-├── auth.log
-├── detector.py
-├── report.txt
-└── README.md
+├── logs/
+│
+├── reports/
+│
+├── Detector.py
+│
+├── README.md
+│
+└── requirements.txt
 ```
 
 ---
 
-## How It Works
+## Learning Objectives
 
-1. Reads authentication logs from `auth.log`
-2. Identifies failed login entries
-3. Extracts IP addresses
-4. Counts occurrences for each IP
-5. Flags suspicious IPs based on the alert threshold
-6. Generates a report
-
----
-
-## Sample Input
-
-```text
-Failed login from 192.168.1.10
-Failed login from 192.168.1.10
-Failed login from 10.0.0.5
-Successful login from 10.0.0.8
-Failed login from 192.168.1.10
-```
-
----
-
-## Sample Output
-
-```text
-Suspicious IP Addresses
------------------------
-192.168.1.10 -> 3 Attempts
-
-Other IP Addresses
-------------------
-10.0.0.5 -> 1 Attempt
-```
-
----
-
-## Skills Demonstrated
+This project is designed to strengthen practical skills in:
 
 * Python Automation
-* Security Log Analysis
-* Regular Expressions
-* Data Processing
-* Security Monitoring Concepts
-* Report Generation
+* Linux Administration
+* Log Analysis
+* Security Monitoring
+* Security Engineering
+* Cloud Security Fundamentals
 
 ---
 
-## Future Improvements
+## Roadmap
 
-* Username extraction
-* Timestamp analysis
-* JSON report generation
-* Multiple log file support
-* Directory scanning
-* Email alerting
-* AWS CloudWatch log integration
+* [x] Failed Login Detection
+* [ ] SSH Login Analysis
+* [ ] Username Tracking
+* [ ] Multi-Log Processing
+* [ ] Enhanced Reporting
+* [ ] Linux Health Monitoring
+* [ ] AWS Security Automation
 
 ---
 
 ## Author
 
-Mohammed Kasim R 
+Mohammed Kasim
 
-Aspiring Cloud Security Engineer | RHCSA Certified | Python & AWS Enthusiast
+RHCSA Certified | Python Automation | AWS & Cloud Security Enthusiast
