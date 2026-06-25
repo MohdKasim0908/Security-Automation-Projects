@@ -1,0 +1,59 @@
+=====================================================
+SSH ACCESS & FAILED LOGIN ANALYZER
+=====================================================
+
+Generated : 2026-06-25 14:08
+
+Analyzed Files:
+----------------
+    ssh1.log
+    ssh2.log
+    ssh3.log
+
+
+=====================================================
+SUSPICIOUS IPs
+=====================================================
+192.168.1.10    --> 11 Attempts
+
+
+=====================================================
+TOP ATTACKING IPs
+=====================================================
+192.168.1.10    --> 11 Attempts
+172.16.1.1      -->  4 Attempts
+203.0.113.45    -->  4 Attempts
+198.51.100.22   -->  4 Attempts
+10.0.0.5        -->  2 Attempts
+
+
+=====================================================
+MOST TARGETED USERS
+=====================================================
+root       -->  16 Attempts
+admin      -->   6 Attempts
+ubuntu     -->   3 Attempts
+
+
+=====================================================
+SUCCESSFUL LOGIN USERS
+=====================================================
+kasim      -->   2 Logins
+admin      -->   1 Logins
+devops     -->   1 Logins
+backup     -->   1 Logins
+
+
+=====================================================
+SUMMARY
+=====================================================
+
+Files Analyzed       : 3
+Failed Logins        : 25
+Successful Logins    : 5
+
+Unique Attacker IPs  : 5
+Targeted Users       : 3
+
+Top Attacking IP     : 192.168.1.10 (11 Attempts)
+Most Targeted User   : root (16 Attempts)

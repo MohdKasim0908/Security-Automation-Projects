@@ -2,17 +2,17 @@
 
 A collection of Python-based security automation projects developed to strengthen practical skills in cybersecurity, Linux administration, cloud security, and automation engineering.
 
-This repository serves as a portfolio of hands-on projects focused on solving real-world security and operational challenges through automation.
+This repository serves as a portfolio of hands-on projects that automate real-world security tasks, system monitoring, log analysis, and cloud security operations.
 
 ---
 
 ## Objectives
 
-* Develop practical Python automation skills
-* Automate security monitoring and reporting tasks
-* Analyze and process security logs
-* Build Linux administration and monitoring tools
-* Develop cloud security automation solutions
+* Build practical Python automation skills
+* Automate security monitoring tasks
+* Analyze and process authentication logs
+* Develop Linux administration utilities
+* Build cloud security automation tools
 * Gain hands-on experience with AWS security services
 
 ---
@@ -23,20 +23,20 @@ This repository serves as a portfolio of hands-on projects focused on solving re
 
 * Python
 * Regular Expressions (Regex)
-* JSON
 * File Handling
 * Exception Handling
+* JSON
 * OS Module
-* Subprocess Module
+* Subprocess Module *(Upcoming)*
 
 ### Linux & Security
 
 * SSH
-* System Monitoring
-* Log Analysis
+* Authentication Log Analysis
+* Security Monitoring
 * Security Reporting
 
-### Cloud & DevOps
+### Cloud & DevOps *(Upcoming)*
 
 * AWS
 * Boto3
@@ -47,22 +47,41 @@ This repository serves as a portfolio of hands-on projects focused on solving re
 
 ---
 
-## Projects
+# Projects
 
-### Completed
+## ✅ SSH Access & Failed Login Analyzer
 
-* SSH Access & Failed Login Analyzer
+**Status:** Completed
 
-### In Progress
+A Python-based security automation tool that analyzes SSH authentication logs, detects suspicious login activity, tracks successful logins, and generates structured security reports.
 
-* None
+**Key Features**
 
-### Planned
+* Multi-log file analysis
+* Failed login detection
+* Successful login tracking
+* Suspicious IP detection
+* Top attacker identification
+* Most targeted user analysis
+* Automated report generation
+
+**Skills Demonstrated**
+
+* Python Automation
+* Regex
+* File Handling
+* OS Module
+* Counter
+* Log Analysis
+* Report Generation
+
+---
+
+## 🚧 Upcoming Projects
 
 * Linux Health Checker
 * EC2 Inventory Tool
 * AWS Security Auditor
-* Security Report Generator
 * IAM User Auditor
 * S3 Bucket Security Checker
 
@@ -77,11 +96,13 @@ Security-Automation-Projects/
 │
 ├── linux_health_checker/
 │
-├── aws_ec2_inventory/
+├── ec2_inventory_tool/
 │
 ├── aws_security_auditor/
 │
-├── security_report_generator/
+├── iam_user_auditor/
+│
+├── s3_bucket_security_checker/
 │
 └── README.md
 ```
@@ -94,28 +115,43 @@ Security-Automation-Projects/
 * Security Monitoring
 * Log Analysis
 * Linux Administration
-* Cloud Security Fundamentals
-* AWS Automation
-* Security Engineering Concepts
+* Report Generation
+* Security Engineering Fundamentals
+* Cloud Security Fundamentals *(Upcoming)*
 
 ---
 
 ## Learning Roadmap
 
-* [x] File Handling
-* [x] Exception Handling
-* [x] JSON
-* [x] Regular Expressions
-* [x] OS Module
-* [ ] Subprocess Module
-* [ ] Linux Automation
-* [ ] Boto3
-* [ ] AWS Security Automation
+### Completed
+
+* ✅ File Handling
+* ✅ Exception Handling
+* ✅ JSON
+* ✅ Regular Expressions (Regex)
+* ✅ OS Module
+
+### In Progress
+
+* 🔄 Security Automation Projects
+
+### Upcoming
+
+* ⏳ Subprocess Module
+* ⏳ Linux Automation
+* ⏳ Boto3
+* ⏳ AWS Security Automation
+
+---
+
+## About This Repository
+
+This repository is continuously updated as I learn new technologies and build practical security automation projects. Each project focuses on solving a real-world security or system administration problem while improving Python programming and cloud security skills.
 
 ---
 
 ## Author
 
-Mohammed Kasim
+**Mohammed Kasim**
 
 RHCSA Certified | Python Automation | AWS & Cloud Security Enthusiast

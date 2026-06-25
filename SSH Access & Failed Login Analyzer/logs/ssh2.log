@@ -1,0 +1,10 @@
+Jun 22 11:15:12 sshd[2001]: Failed password for root from 192.168.1.10 port 51001 ssh2
+Jun 22 11:15:50 sshd[2002]: Failed password for root from 192.168.1.10 port 51002 ssh2
+Jun 22 11:16:21 sshd[2003]: Failed password for admin from 203.0.113.45 port 51100 ssh2
+Jun 22 11:16:48 sshd[2004]: Failed password for ubuntu from 203.0.113.45 port 51101 ssh2
+Jun 22 11:17:09 sshd[2005]: Failed password for root from 198.51.100.22 port 51200 ssh2
+Jun 22 11:18:11 sshd[2006]: Failed password for root from 198.51.100.22 port 51201 ssh2
+Jun 22 11:19:15 sshd[2007]: Accepted password for devops from 10.0.0.8 port 51300 ssh2
+Jun 22 11:20:30 sshd[2008]: Failed password for root from 192.168.1.10 port 51003 ssh2
+Jun 22 11:21:44 sshd[2009]: Failed password for root from 192.168.1.10 port 51004 ssh2
+Jun 22 11:22:17 sshd[2010]: Failed password for admin from 203.0.113.45 port 51102 ssh2

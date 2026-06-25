@@ -1,20 +1,21 @@
 # SSH Access & Failed Login Analyzer
 
-A Python-based security automation project focused on analyzing SSH authentication logs, detecting suspicious login activity, and generating security reports.
+A Python-based security automation tool that analyzes SSH authentication logs to detect failed login attempts, identify suspicious IP addresses, track successful logins, and generate detailed security reports.
 
-This repository is being developed as part of a cloud security and security automation learning journey, with the goal of building practical tools commonly used in system administration, security operations, and cloud security environments.
+This project demonstrates practical Python automation skills commonly used in cybersecurity, Linux system administration, and Security Operations Center (SOC) environments.
 
 ---
 
-## Project Goals
+## Features
 
-* Analyze SSH authentication logs
+* Analyze multiple SSH log files automatically
 * Detect failed login attempts
-* Identify suspicious IP addresses
-* Track successful and failed logins
-* Extract targeted usernames
-* Generate security reports
-* Automate log analysis workflows
+* Track successful user logins
+* Extract attacker IP addresses
+* Identify targeted usernames
+* Detect suspicious IPs using a configurable alert threshold
+* Generate a structured security report
+* Summarize authentication activity and attack statistics
 
 ---
 
@@ -24,82 +25,90 @@ This repository is being developed as part of a cloud security and security auto
 * Regular Expressions (Regex)
 * File Handling
 * Exception Handling
-* JSON
+* Collections (`Counter`)
 * OS Module
-
-Future versions will include:
-
-* Subprocess Module
-* Linux System Monitoring
-* Security Automation
-* AWS Integration (Boto3)
+* Datetime Module
 
 ---
 
-## Current Features
-
-### Implemented
-
-* Failed login detection
-* IP address extraction
-* Failed attempt counting
-* Suspicious IP identification
-* Report generation
-* Alert threshold configuration
-
-### Planned
-
-* SSH login success analysis
-* Username extraction
-* Multi-log file support
-* Automated log discovery
-* Enhanced reporting
-* JSON report generation
-* Risk classification
-* AWS security automation integrations
-
----
-
-## Repository Structure
+## Project Structure
 
 ```text
-SSH-Access-Failed-Login-Analyzer/
+ssh_access_failed_login_analyzer/
 │
 ├── logs/
+│   ├── ssh1.log
+│   ├── ssh2.log
+│   └── ssh3.log
 │
-├── reports/
+├── Reports/
+│   └── Report.txt
 │
-├── Detector.py
-│
-├── README.md
-│
-└── requirements.txt
+├── analyzer.py
+└── README.md
 ```
 
 ---
 
-## Learning Objectives
+## Report Includes
 
-This project is designed to strengthen practical skills in:
-
-* Python Automation
-* Linux Administration
-* Log Analysis
-* Security Monitoring
-* Security Engineering
-* Cloud Security Fundamentals
+* Files analyzed
+* Suspicious IP addresses
+* Top attacking IPs
+* Most targeted usernames
+* Successful login users
+* Total failed logins
+* Total successful logins
+* Number of unique attacker IPs
+* Number of targeted users
+* Top attacking IP summary
+* Most targeted user summary
 
 ---
 
-## Roadmap
+## Sample Workflow
 
-* [x] Failed Login Detection
-* [ ] SSH Login Analysis
-* [ ] Username Tracking
-* [ ] Multi-Log Processing
-* [ ] Enhanced Reporting
-* [ ] Linux Health Monitoring
-* [ ] AWS Security Automation
+```text
+SSH Log Files
+        │
+        ▼
+Read All Log Files
+        │
+        ▼
+Extract Users & IPs using Regex
+        │
+        ▼
+Analyze Authentication Activity
+        │
+        ▼
+Detect Suspicious IPs
+        │
+        ▼
+Generate Security Report
+```
+
+---
+
+## Skills Demonstrated
+
+* Python Automation
+* Log File Analysis
+* Security Event Monitoring
+* Regular Expressions
+* Data Processing
+* Report Generation
+* Linux Log Analysis Fundamentals
+
+---
+
+## Future Improvements
+
+* JSON report generation
+* Command-line arguments
+* Configurable alert threshold
+* Support for additional Linux log formats
+* Unit tests
+* AWS CloudWatch log integration
 
 ---
 
